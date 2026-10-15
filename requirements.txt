@@ -1,0 +1,19 @@
+# API
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+
+# Background jobs
+celery[redis]>=5.4,<6.0
+redis>=5.0
+
+# Database & config
+sqlalchemy>=2.0,<3.0
+pydantic-settings>=2.4
+
+# Speech-to-text (pulls in torch; see README for a CPU-only install)
+openai-whisper>=20240930
+
+# Tests
+pytest>=8.0
+httpx>=0.27

@@ -1,0 +1,35 @@
+ 
+ -------------- celery@my-pc v5.6.3 (recovery)
+--- ***** ----- 
+-- ******* ---- Linux-6.8.0-138-generic-x86_64-with-glibc2.35 2026-10-15 16:00:04
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         transcription:0x7911c6341c90
+- ** ---------- .> transport:   redis://localhost:6379/0
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 2 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . transcription.transcribe_audio
+
+[2026-10-15 16:00:04,102: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2026-10-15 16:00:04,104: INFO/MainProcess] mingle: searching for neighbors
+[2026-10-15 16:00:05,110: INFO/MainProcess] mingle: all alone
+[2026-10-15 16:00:05,117: INFO/MainProcess] celery@my-pc ready.
+[2026-10-15 16:00:05,235: INFO/ForkPoolWorker-1] Loading Whisper model 'base' on cpu
+[2026-10-15 16:00:05,253: INFO/ForkPoolWorker-2] Loading Whisper model 'base' on cpu
+[2026-10-15 16:00:05,913: INFO/ForkPoolWorker-1] Whisper model loaded
+[2026-10-15 16:00:05,932: INFO/ForkPoolWorker-2] Whisper model loaded
+[2026-10-15 16:00:08,609: INFO/MainProcess] Task transcription.transcribe_audio[074cdf0e-23fa-4dd2-baf2-0a3ead20b5e8] received
+[2026-10-15 16:00:08,617: INFO/ForkPoolWorker-1] Job 6295b22ef2d84b06999041345ac1a9fe: attempt 1 (celery retry 0)
+[2026-10-15 16:00:15,468: INFO/ForkPoolWorker-1] Job 6295b22ef2d84b06999041345ac1a9fe: completed with 4 segments
+[2026-10-15 16:00:15,468: INFO/ForkPoolWorker-1] Task transcription.transcribe_audio[074cdf0e-23fa-4dd2-baf2-0a3ead20b5e8] succeeded in 6.858585759000562s: None
+[2026-10-15 16:03:33,105: INFO/MainProcess] Task transcription.transcribe_audio[ba4c9ba4-26bf-47ac-a5af-a425cfee340f] received
+[2026-10-15 16:03:33,108: INFO/ForkPoolWorker-1] Job 3927b165fb62445e85a709f19fd1dbab: attempt 1 (celery retry 0)
+[2026-10-15 16:03:38,474: INFO/ForkPoolWorker-1] Job 3927b165fb62445e85a709f19fd1dbab: completed with 3 segments
+[2026-10-15 16:03:38,474: INFO/ForkPoolWorker-1] Task transcription.transcribe_audio[ba4c9ba4-26bf-47ac-a5af-a425cfee340f] succeeded in 5.368756873000166s: None

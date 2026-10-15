@@ -1,0 +1,15 @@
+INFO:     Started server process [16233]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-10-15 16:00:08,611 INFO app.api.routes: Job 6295b22ef2d84b06999041345ac1a9fe: accepted 'jfk2.mp3' (353109 bytes)
+INFO:     127.0.0.1:45052 - "POST /transcriptions HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:53160 - "GET /transcriptions/6295b22ef2d84b06999041345ac1a9fe HTTP/1.1" 200 OK
+INFO:     192.168.29.174:51268 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.29.174:51268 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.29.174:51268 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     192.168.29.174:51280 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34336 - "GET /health HTTP/1.1" 200 OK
+2026-10-15 16:03:33,104 INFO app.api.routes: Job 3927b165fb62445e85a709f19fd1dbab: accepted 'test-audio.mp3' (353109 bytes)
+INFO:     192.168.29.174:36102 - "POST /transcriptions HTTP/1.1" 202 Accepted
+INFO:     192.168.29.174:52690 - "GET /transcriptions/3927b165fb62445e85a709f19fd1dbab HTTP/1.1" 200 OK
